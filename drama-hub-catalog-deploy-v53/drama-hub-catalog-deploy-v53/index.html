@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101014"><meta name="description" content="Browse all featured mini dramas on Drama Hub.">
+<title>Drama Hub — Mini Drama Library</title>
+<style>
+:root{--bg:#101014;--ink:#f8f7f4;--muted:#aaa8b4;--line:rgba(255,255,255,.10);--accent:#e9ff69;--hover:#22222a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);background:radial-gradient(ellipse at 50% -15%,rgba(120,58,82,.30),transparent 38rem),radial-gradient(ellipse at 100% 55%,rgba(64,63,112,.15),transparent 28rem),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{width:min(100% - 32px,620px);margin:0 auto;padding:38px 0 28px}.brand{display:flex;justify-content:center;align-items:center;gap:9px;margin:0 0 26px;font-size:12px;font-weight:900;letter-spacing:.2em;text-transform:uppercase}.brand-mark{width:10px;height:10px;border-radius:3px;background:var(--accent);transform:rotate(45deg);box-shadow:0 0 18px #e9ff6970}
+.intro{text-align:center;margin-bottom:28px}.eyebrow{margin:0 0 9px;color:var(--accent);text-transform:uppercase;letter-spacing:.2em;font-size:10px;font-weight:850}h1{margin:0;font-size:clamp(34px,8vw,44px);line-height:1;letter-spacing:-.065em;font-weight:950}.intro p:last-child{max-width:410px;margin:13px auto 0;color:#b8b5c0;font-size:14px;line-height:1.65}
+.section-head{display:flex;align-items:center;gap:10px;margin:0 0 13px;color:var(--muted);font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.19em}.section-head:after{content:"";height:1px;flex:1;background:var(--line)}.catalog{display:grid;gap:12px}
+.drama[hidden]{display:none!important}
+.drama{min-height:100px;display:flex;align-items:center;gap:14px;padding:12px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(110deg,#ffffff10,#ffffff06);text-decoration:none;color:var(--ink);transition:transform .2s,border-color .2s,background .2s,box-shadow .2s}.drama:hover{transform:translateY(-3px);border-color:#e9ff6970;background:var(--hover);box-shadow:0 14px 35px #0000003d}
+.poster{position:relative;flex:0 0 76px;width:76px;height:76px;overflow:hidden;border-radius:12px;background:linear-gradient(145deg,#6e2c45,#241d32);display:grid;place-items:center}.poster img{width:100%;height:100%;display:block;object-fit:cover}.poster .placeholder{color:#fff;font-size:23px;font-weight:900}.poster:after{content:"";position:absolute;inset:5px;border:1px solid #ffffff3d;border-radius:8px;pointer-events:none}
+.details{flex:1;min-width:0}.title{display:block;margin-bottom:5px;font-size:15px;line-height:1.3;font-weight:850;letter-spacing:-.02em}.description{display:block;color:var(--muted);font-size:12px;line-height:1.45}.tag{display:inline-block;margin-top:7px;padding:4px 7px;border-radius:5px;background:#e9ff691a;color:var(--accent);font-size:9px;font-weight:850;text-transform:uppercase;letter-spacing:.1em}.arrow{flex:0 0 31px;width:31px;height:31px;display:grid;place-items:center;border-radius:50%;background:#ffffff12;font-size:17px}.drama:hover .arrow{background:var(--accent);color:#15160b}
+.pagination{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px;margin:22px 0 0}.page-btn{min-width:40px;height:40px;padding:0 13px;border:1px solid var(--line);border-radius:12px;background:#ffffff0a;color:var(--ink);font:inherit;font-size:13px;font-weight:800;cursor:pointer}.page-btn:hover:not(:disabled){border-color:#e9ff6970;background:var(--hover)}.page-btn[aria-current="page"]{background:var(--accent);color:#15160b;border-color:var(--accent)}.page-btn:disabled{opacity:.35;cursor:not-allowed}.page-status{width:100%;text-align:center;color:var(--muted);font-size:11px;margin-top:3px}.note{margin:16px 2px 0;color:#777480;font-size:11px;line-height:1.6;text-align:center}footer{margin-top:28px;padding-top:17px;border-top:1px solid var(--line);text-align:center;color:#777480;font-size:11px}
+@media(max-width:420px){.wrap{padding-top:28px}.drama{gap:11px;padding:10px;min-height:88px}.poster{flex-basis:66px;width:66px;height:66px}.title{font-size:14px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}
+</style></head>
+<body><main class="wrap">
+<div class="brand"><span class="brand-mark"></span> Drama Hub <span class="brand-mark"></span></div>
+<header class="intro"><p class="eyebrow">Your mini drama library</p><h1>Pick Your Next Drama.</h1><p>Explore the stories everyone will be talking about. Tap a title to start watching.</p></header>
+<section aria-labelledby="catalog-heading"><h2 class="section-head" id="catalog-heading">All dramas</h2><div class="catalog">
+<!-- DRAMA ITEM 1: Poster and title added. Replace the destination URL when ready. -->
+<a class="drama" href="https://r.reelsgo.tv/5zuXnBR5KVlt" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="my-demon-lord-your-shepherd-girl-poster.png" alt="My Demon Lord, Your Shepherd Girl Has Run Away Again poster"></span><span class="details"><span class="title">My Demon Lord, Your Shepherd Girl Has Run Away Again</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 4: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/ituhzOpmxUOw" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="i-married-this-dragon-king-poster.png" alt="I Married This Dragon King Instead of My Sister poster"></span><span class="details"><span class="title">I Married This Dragon King Instead of My Sister</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 5: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/o1nyu1pfeewz" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="satans-successor-homeless-man-poster.png" alt="Satan's Successor: Don't Mess With That Homeless Man! poster"></span><span class="details"><span class="title">Satan's Successor: Don't Mess With That Homeless Man!</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 6: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/xE1XejnoPNIx" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="chosen-by-the-dragon-baby-human-mate-poster.png" alt="Chosen by the Dragon Baby: His Human Mate poster"></span><span class="details"><span class="title">Chosen by the Dragon Baby: His Human Mate</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 7: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/Dprr2qDLj6Rx" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="stockpiling-to-feed-16th-century-boyfriend-poster.png" alt="Stockpiling to Feed My 16th-Century Boyfriend poster"></span><span class="details"><span class="title">Stockpiling to Feed My 16th-Century Boyfriend</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 8: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/Ui-vUf3Bo2YR" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-omega-they-shamed-lost-lycan-heiress-poster.png" alt="The Omega They Shamed Is the Lost Lycan Heiress poster"></span><span class="details"><span class="title">The Omega They Shamed Is the Lost Lycan Heiress</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 9: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/OOwSCgpp0YQf" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="sorry-no-dragon-heiress-here-poster.png" alt="Sorry, No Dragon Heiress Here poster"></span><span class="details"><span class="title">Sorry, No Dragon Heiress Here</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 10: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/zZgcIcJ8_j24" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-alpha-kings-secret-hybrid-baby-poster.png" alt="The Alpha King's Secret Hybrid Baby poster"></span><span class="details"><span class="title">The Alpha King’s Secret Hybrid Baby</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 11: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/Lg412MNT8bF_" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-day-i-got-divorced-billionaire-mom-found-me-poster.png" alt="The Day I Got Divorced, My Billionaire Mom Found Me poster"></span><span class="details"><span class="title">The Day I Got Divorced, My Billionaire Mom Found Me</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 12: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/j4SA8UkzJ9tf" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="hurt-me-for-her-flee-alpha-poster.jpg" alt="Hurt Me For Her? Flee Alpha poster"></span><span class="details"><span class="title">Hurt Me For Her? Flee Alpha</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 13: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/1aCxufigbnFJ" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="mated-to-twin-shifters-i-only-kept-one.webp" alt="Mated to Twin Shifters, I Only Kept One poster"></span><span class="details"><span class="title">Mated to Twin Shifters, I Only Kept One</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 14: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/IUUPvGW_p6zJ" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="he-slapped-me-at-our-wedding-poster.webp" alt="He Slapped Me at Our Wedding poster"></span><span class="details"><span class="title">He Slapped Me at Our Wedding</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 15: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/vArUNNRBTDu3" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="replaced-hockey-captain-school-prince-poster.webp" alt="Replaced The Hockey Captain With The School Prince poster"></span><span class="details"><span class="title">Replaced The Hockey Captain With The School Prince</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 16: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/GsF4hBG8m0Jj" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="he-failed-to-see-me-poster.webp" alt="He Failed to See Me poster"></span><span class="details"><span class="title">He Failed to See Me</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 17: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/m54ZsRO89RsV" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="fiance-wed-my-sister-i-exposed-them-poster.webp" alt="Fiancé Wed My Sister, I Exposed Them poster"></span><span class="details"><span class="title">Fiancé Wed My Sister, I Exposed Them</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 18: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/cOr7dQeWrB5-" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="always-his-second-choice-poster.png" alt="Always His Second Choice poster"></span><span class="details"><span class="title">Always His Second Choice</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 19: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/bH7MsS7QFOWc" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="gold-digger-four-sugar-daddies-poster.png" alt="Gold Digger With 4 Sugar Daddies: They're My Dad & Brothers poster"></span><span class="details"><span class="title">Gold Digger With 4 Sugar Daddies: They're My Dad & Brothers</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 20: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/bkuB20N07dPl" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-xxl-wife-he-killed-is-back-poster.png" alt="The XXL Wife He Killed Is Back—Now He's at My Feet poster"></span><span class="details"><span class="title">The XXL Wife He Killed Is Back—Now He's at My Feet</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 21: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/LZQb2ErA9vuY" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="hearing-the-cats-thoughts-fiances-betrayal-poster.png" alt="Hearing the Cat's Thoughts, I Uncovered My Fiancé's Betrayal poster"></span><span class="details"><span class="title">Hearing the Cat's Thoughts, I Uncovered My Fiancé's Betrayal</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 22: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/1_hg0ZgAbFfd" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="they-buried-me-at-my-sisters-wedding-poster.png" alt="They Buried Me at My Sister's Wedding poster"></span><span class="details"><span class="title">They Buried Me at My Sister's Wedding</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 23: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/r4KmrtZ7iRkJ" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="call-my-pups-bastards-royal-heirs-poster.png" alt="Call My Pups Bastards: They Are Royal Heirs! poster"></span><span class="details"><span class="title">Call My Pups Bastards: They Are Royal Heirs!</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 24: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/gP3I2bJCZ8j2" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="dead-girl-logging-in-the-revenge-roulette-poster.png" alt="Dead Girl Logging In: The Revenge Roulette poster"></span><span class="details"><span class="title">Dead Girl Logging In: The Revenge Roulette</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 25: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/IUymuMHtyz0I" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="he-chose-my-sister-i-chose-my-new-life-as-heiress-poster.png" alt="He Chose My Sister, I Chose My New Life as Heiress poster"></span><span class="details"><span class="title">He Chose My Sister, I Chose My New Life as Heiress</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 26: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/E2Eh5cU8UnuH" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="reborn-to-win-what-they-stole-poster.png" alt="Reborn To Win What They Stole poster"></span><span class="details"><span class="title">Reborn To Win What They Stole</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DUPLICATE a complete .drama block above to add more dramas. -->
+<a class="drama" href="https://r.reelsgo.tv/ILPM1P2YAAYC" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="they-called-me-a-nerd-stepped-into-the-ring-poster.png" alt="They Called Me a Nerd, Until I Stepped Into the Ring poster"></span><span class="details"><span class="title">They Called Me a Nerd, Until I Stepped Into the Ring</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- DRAMA ITEM 26: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/dcJq8w9WnBls" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="my-best-friend-stole-my-face-poster.jpg" alt="My Best Friend Stole My Face poster"></span><span class="details"><span class="title">My Best Friend Stole My Face</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+
+<!-- DRAMA ITEM 28: Added from the user-provided poster and link. -->
+<a class="drama" href="https://r.reelsgo.tv/D_gRTvFWV2GV" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="no-more-mrs-nice-wife-poster.jpg" alt="No More Mrs. Nice Wife poster"></span><span class="details"><span class="title">No More Mrs. Nice Wife</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/akmMwSlsBeWB" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-star-princess-he-betrayed-poster.png" alt="The Star Princess He Betrayed poster"></span><span class="details"><span class="title">The Star Princess He Betrayed</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/atPeWuhSt01V" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-s-rank-alpha-owns-my-secret-poster.png" alt="The S-Rank Alpha Owns My Secret poster"></span><span class="details"><span class="title">The S-Rank Alpha Owns My Secret</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+<a class="drama" href="https://r.reelsgo.tv/LCmqeARuSWdf" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="i-married-my-besties-son-for-revenge-poster.jpg" alt="I Married My Bestie’s Son for Revenge poster"></span><span class="details"><span class="title">I Married My Bestie’s Son for Revenge</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/m98g5Gb0BD9G" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="halloween-i-possessed-a-murdered-werewolf-heiress-poster.jpg" alt="Halloween! I Possessed a Murdered Werewolf Heiress poster"></span><span class="details"><span class="title">Halloween! I Possessed a Murdered Werewolf Heiress</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/-0nL2s4eUtWE" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="fake-angels-public-downfall-poster.jpg" alt="Fake Angel’s Public Downfall poster"></span><span class="details"><span class="title">Fake Angel’s Public Downfall</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/L9AGhAeq2Hdo" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-debt-collector-who-became-a-mafia-heiress-poster.jpg" alt="The Debt Collector Who Became a Mafia Heiress poster"></span><span class="details"><span class="title">The Debt Collector Who Became a Mafia Heiress</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/LDy5XR7_jo5C" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="traitors-meet-her-dragon-poster.jpg" alt="Traitors, Meet Her Dragon poster"></span><span class="details"><span class="title">Traitors, Meet Her Dragon</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/fKb8PfiJLmIG" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="ashes-couldnt-bury-her-poster.jpg" alt="Ashes Couldn't Bury Her poster"></span><span class="details"><span class="title">Ashes Couldn't Bury Her</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/e33Ecin_RvzJ" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="reborn-from-ugly-duckling-to-everyones-obsession-poster.jpg" alt="Reborn: From Ugly Duckling to Everyone’s Obsession poster"></span><span class="details"><span class="title">Reborn: From Ugly Duckling to Everyone’s Obsession</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/qTIv73YVsr40" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="too-late-to-say-you-love-me-poster.jpg" alt="Too Late to Say You Love Me poster"></span><span class="details"><span class="title">Too Late to Say You Love Me</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/7-Ed5dLRiFWH" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="beauty-boss-reborn-in-the-90s-poster.jpg" alt="Beauty Boss Reborn in the 90s poster"></span><span class="details"><span class="title">Beauty Boss Reborn in the 90s</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/peG9oJASHqSJ" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="you-picked-the-wrong-lawyer-poster.jpg" alt="You Picked the Wrong Lawyer poster"></span><span class="details"><span class="title">You Picked the Wrong Lawyer</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="drama" href="https://r.reelsgo.tv/3Bb3HuBEOPJg" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="my-ex-wife-is-a-secret-billionaire-poster.jpg" alt="My Ex-Wife is a Secret Billionaire poster"></span><span class="details"><span class="title">My Ex-Wife is a Secret Billionaire</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+<a class="drama" href="https://r.reelsgo.tv/MVH1y65aaVMs" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="i-found-the-secret-behind-my-husbands-closet-poster.jpg" alt="I Found the Secret Behind My Husband&#x27;s Closet poster"></span><span class="details"><span class="title">I Found the Secret Behind My Husband&#x27;s Closet</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/Qylq57k0VeDG" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="pay-me-or-lose-me-poster.jpg" alt="Pay Me Or Lose Me poster"></span><span class="details"><span class="title">Pay Me Or Lose Me</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/wVdsyuaOhHUu" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-billionaire-ceo-strikes-back-poster.jpg" alt="The Billionaire CEO Strikes Back poster"></span><span class="details"><span class="title">The Billionaire CEO Strikes Back</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+<a class="drama" href="https://r.reelsgo.tv/41eT8OOzjApu" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="i-walked-away-from-my-high-society-wedding-poster.jpg" alt="I Walked Away from My High-Society Wedding poster"></span><span class="details"><span class="title">I Walked Away from My High-Society Wedding</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="drama" href="https://r.reelsgo.tv/gS1aX46p8HfB" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="my-ex-killed-me-reborn-i-reversed-all-poster.jpg" alt="My Ex Killed Me, Reborn I Reversed All poster"></span><span class="details"><span class="title">My Ex Killed Me, Reborn I Reversed All</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="drama" href="https://r.reelsgo.tv/8yu6uQGXqI3H" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="step-on-me-ill-crush-you-all-poster.png" alt="Step on Me I&#x27;ll Crush You All poster"></span><span class="details"><span class="title">Step on Me I&#x27;ll Crush You All</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+<a class="drama" href="https://r.reelsgo.tv/pq8IyZCnlPH0" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-cleaner-they-fired-was-their-billionaire-boss-poster.png" alt="The Cleaner They Fired Was Their Billionaire Boss poster"></span><span class="details"><span class="title">The Cleaner They Fired Was Their Billionaire Boss</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+<!-- Added using the exact poster uploaded by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/2acUHOQY967W" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="they-kicked-out-the-vampire-who-owned-it-all-poster.png" alt="They Kicked Out the Vampire Who Owned It All poster"></span><span class="details"><span class="title">They Kicked Out the Vampire Who Owned It All</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+
+<!-- Added with the exact poster supplied by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/EFQkxhzfaFj_" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="her-secret-lycan-king-poster.png" alt="Her Secret Lycan King poster"></span><span class="details"><span class="title">Her Secret Lycan King</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+<!-- Added with the exact poster supplied by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/1lCcvu5fb8r8" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="betrayed-at-my-engagement-i-wed-the-billionaire-whod-secretly-loved-me-poster.png" alt="Betrayed at My Engagement, I Wed the Billionaire Who&#x27;d Secretly Loved Me poster"></span><span class="details"><span class="title">Betrayed at My Engagement, I Wed the Billionaire Who&#x27;d Secretly Loved Me</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+<!-- Added with the exact poster supplied by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/NC_5ZDQMxSRE" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="my-alphas-wedding-my-funeral-poster.png" alt="My Alpha’s Wedding, My Funeral poster"></span><span class="details"><span class="title">My Alpha’s Wedding, My Funeral</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+<!-- Added with the exact poster supplied by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/FbOKFox3SdjS" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-useless-wife-made-300-assassins-kneel-poster.png" alt="The “Useless” Wife Made 300 Assassins Kneel poster"></span><span class="details"><span class="title">The “Useless” Wife Made 300 Assassins Kneel</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+
+<!-- Added with the exact poster supplied by the user. -->
+<a class="drama" href="https://r.reelsgo.tv/hOYkxAfywhq8" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-mafias-timid-wife-is-a-legendary-assassin-poster.png" alt="The Mafia&#x27;s Timid Wife Is a Legendary Assassin poster"></span><span class="details"><span class="title">The Mafia&#x27;s Timid Wife Is a Legendary Assassin</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="drama" href="https://r.reelsgo.tv/hjRsBzRqMjPB" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-vampire-who-wanted-to-die-poster.jpg" alt="The Vampire Who Wanted to Die poster"></span><span class="details"><span class="title">The Vampire Who Wanted to Die</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="drama" href="https://r.reelsgo.tv/2SMuZv5RC_MO" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="my-ghost-ex-left-me-a-daughter-i-never-knew-poster.jpg" alt="My Ghost Ex Left Me a Daughter I Never Knew poster"></span><span class="details"><span class="title">My Ghost Ex Left Me a Daughter I Never Knew</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="drama" href="https://r.reelsgo.tv/EK8NDCPRJ60O" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="his-betrayed-wife-is-the-secret-heiress-poster.jpg" alt="His Betrayed Wife Is the Secret Heiress poster"></span><span class="details"><span class="title">His Betrayed Wife Is the Secret Heiress</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="drama" href="https://r.reelsgo.tv/txxKUYW-dE1O" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="the-bastard-they-bullied-is-the-real-heiress-poster.jpg" alt="The Bastard They Bullied Is the Real Heiress poster"></span><span class="details"><span class="title">The Bastard They Bullied Is the Real Heiress</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="drama" href="https://r.reelsgo.tv/SAv9owwW0kJG" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="three-dragonlings-and-the-dawnfire-heir-poster.jpg" alt="Three Dragonlings and the Dawnfire Heir poster"></span><span class="details"><span class="title">Three Dragonlings and the Dawnfire Heir</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+<a class="drama" href="https://r.reelsgo.tv/ET7HwLrwW2-C" target="_blank" rel="noopener noreferrer"><span class="poster"><img src="return-of-the-bay-area-don-poster.jpg" alt="Return of the Bay Area Don poster"></span><span class="details"><span class="title">Return of the Bay Area Don</span><span class="tag">Watch now</span></span><span class="arrow" aria-hidden="true">↗</span></a>
+</div><nav class="pagination" id="pagination" aria-label="Drama pages"></nav><p class="note">New stories are added regularly. Choose a drama above to open its viewing page.</p>
+</section>
+<footer>© 2026 Drama Hub · All stories, one destination.</footer>
+</main>
+<script>
+(() => {
+  const pageSize = 18;
+  const catalog = document.querySelector('.catalog');
+  const items = Array.from(catalog.querySelectorAll('.drama'));
+  const pagination = document.getElementById('pagination');
+  let currentPage = 1;
+  function renderPage(page, scrollToList = false) {
+    const totalPages = Math.max(1, Math.ceil(items.length / pageSize));
+    currentPage = Math.min(Math.max(1, page), totalPages);
+    items.forEach((item, index) => {
+      const shouldHide = index < (currentPage - 1) * pageSize || index >= currentPage * pageSize;
+      item.hidden = shouldHide;
+      // Inline !important makes pagination reliable even if other CSS sets .drama to display:flex.
+      if (shouldHide) item.style.setProperty('display', 'none', 'important');
+      else item.style.removeProperty('display');
+    });
+    pagination.replaceChildren();
+    const prev = document.createElement('button');
+    prev.className = 'page-btn'; prev.textContent = '← Previous'; prev.disabled = currentPage === 1;
+    prev.addEventListener('click', () => renderPage(currentPage - 1, true));
+    pagination.append(prev);
+    for (let n = 1; n <= totalPages; n++) {
+      const button = document.createElement('button');
+      button.className = 'page-btn'; button.textContent = String(n);
+      if (n === currentPage) { button.setAttribute('aria-current', 'page'); button.setAttribute('aria-label', `Page ${n}, current page`); }
+      else button.setAttribute('aria-label', `Go to page ${n}`);
+      button.addEventListener('click', () => renderPage(n, true));
+      pagination.append(button);
+    }
+    const next = document.createElement('button');
+    next.className = 'page-btn'; next.textContent = 'Next →'; next.disabled = currentPage === totalPages;
+    next.addEventListener('click', () => renderPage(currentPage + 1, true));
+    pagination.append(next);
+    const status = document.createElement('div'); status.className = 'page-status';
+    status.textContent = `Page ${currentPage} of ${totalPages} · ${items.length} dramas`;
+    pagination.append(status);
+    if (scrollToList) document.getElementById('catalog-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  renderPage(1);
+  // Newly added .drama cards are included automatically on the next render.
+  new MutationObserver(() => {
+    const updated = Array.from(catalog.querySelectorAll('.drama'));
+    if (updated.length !== items.length) { items.splice(0, items.length, ...updated); renderPage(currentPage); }
+  }).observe(catalog, { childList: true });
+})();
+</script>
+</body></html>
