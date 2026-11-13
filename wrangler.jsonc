@@ -1,0 +1,7 @@
+{
+  "name": "drama-hub",
+  "compatibility_date": "2026-11-13",
+  "assets": {
+    "directory": "./drama-hub-catalog-deploy-v53"
+  }
+}
